@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Звонки — ВКонтакте</title>
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header class="header">
+        <div class="header__container">
+            <a href="index.html" class="header__logo">
+                <img src="images/logo.png" alt="VK" class="header__logo-icon">
+                <span class="header__logo-text">ВКонтакте</span>
+            </a>
+            
+            <div class="header__search">
+                <svg class="header__search-icon" viewBox="0 0 24 24">
+                    <path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/>
+                </svg>
+                <input type="text" placeholder="Поиск">
+            </div>
+            
+            <div class="header__icons">
+                <button class="header__icon">
+                    <svg viewBox="0 0 24 24"><path d="M12 22c1.1 0 2-.9 2-2h-4c0 1.1.9 2 2 2zm6-6v-5c0-3.07-1.63-5.64-4.5-6.32V4c0-.83-.67-1.5-1.5-1.5s-1.5.67-1.5 1.5v.68C7.64 5.36 6 7.92 6 11v5l-2 2v1h16v-1l-2-2z"/></svg>
+                </button>
+                <button class="header__icon">
+                    <svg viewBox="0 0 24 24"><path d="M12 3v10.55c-.59-.34-1.27-.55-2-.55-2.21 0-4 1.79-4 4s1.79 4 4 4 4-1.79 4-4V7h4V3h-6z"/></svg>
+                </button>
+                <div class="header__avatar">
+                    <img src="images/profile-avatar.jpg" alt="Профиль">
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="layout">
+        <nav class="left-sidebar">
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="profile.html" class="nav-link">
+                        <img src="images/icon-profile.png" alt="" class="nav-icon-img">
+                        <span>Профиль</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">
+                        <img src="images/icon-feed.png" alt="" class="nav-icon-img">
+                        <span>Лента</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="messages.html" class="nav-link">
+                        <img src="images/icon-messenger.png" alt="" class="nav-icon-img">
+                        <span>Мессенджер</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="calls.html" class="nav-link active">
+                        <img src="images/icon-calls.png" alt="" class="nav-icon-img">
+                        <span>Звонки</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="friends.html" class="nav-link">
+                        <img src="images/icon-friends.png" alt="" class="nav-icon-img">
+                        <span>Друзья</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="communities.html" class="nav-link">
+                        <img src="images/icon-communities.png" alt="" class="nav-icon-img">
+                        <span>Сообщества</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">
+                        <img src="images/icon-photos.png" alt="" class="nav-icon-img">
+                        <span>Фото</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="music.html" class="nav-link">
+                        <img src="images/icon-music.png" alt="" class="nav-icon-img">
+                        <span>Музыка</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">
+                        <img src="images/icon-video.png" alt="" class="nav-icon-img">
+                        <span>Видео</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">
+                        <img src="images/icon-clips.png" alt="" class="nav-icon-img">
+                        <span>Клипы</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">
+                        <img src="images/icon-games.png" alt="" class="nav-icon-img">
+                        <span>Игры</span>
+                        <span class="nav-badge">2</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">
+                        <img src="images/icon-stickers.png" alt="" class="nav-icon-img">
+                        <span>Стикеры</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">
+                        <img src="images/icon-market.png" alt="" class="nav-icon-img">
+                        <span>Маркет</span>
+                    </a>
+                </li>
+                <li class="nav-divider"></li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">
+                        <img src="images/icon-services.png" alt="" class="nav-icon-img">
+                        <span>Сервисы</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">
+                        <img src="images/icon-votes.png" alt="" class="nav-icon-img">
+                        <span>Голоса</span>
+                    </a>
+                </li>
+                <li class="nav-divider"></li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">
+                        <img src="images/icon-bookmarks.png" alt="" class="nav-icon-img">
+                        <span>Закладки</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">
+                        <img src="images/icon-advertising.png" alt="" class="nav-icon-img">
+                        <span>Реклама</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">
+                        <img src="images/icon-help.png" alt="" class="nav-icon-img">
+                        <span>Помощь</span>
+                    </a>
+                </li>
+                <li class="nav-divider"></li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">
+                        <img src="images/icon-people-nearby.png" alt="" class="nav-icon-img">
+                        <span>Люди рядом</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+
+        <main class="calls-main">
+            <!-- Call Actions -->
+            <div class="call-actions">
+                <button class="call-action-btn">
+                    <svg viewBox="0 0 24 24"><path d="M20.01 15.38c-1.23 0-2.42-.2-3.53-.56-.35-.12-.74-.03-1.01.24l-1.57 1.97c-2.83-1.35-5.48-3.9-6.89-6.83l1.95-1.66c.27-.28.35-.67.24-1.02-.37-1.11-.56-2.3-.56-3.53 0-.54-.45-.99-.99-.99H4.19C3.65 3 3 3.24 3 3.99 3 13.28 10.73 21 20.01 21c.71 0 .99-.63.99-1.18v-3.45c0-.54-.45-.99-.99-.99z"/></svg>
+                    Создать звонок
+                </button>
+                <button class="call-action-btn">
+                    <svg viewBox="0 0 24 24"><path d="M19 3h-1V1h-2v2H8V1H6v2H5c-1.11 0-1.99.9-1.99 2L3 19c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16H5V8h14v11zM7 10h5v5H7z"/></svg>
+                    Запланировать
+                </button>
+                <button class="call-action-btn">
+                    <svg viewBox="0 0 24 24"><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg>
+                    Присоединиться
+                </button>
+            </div>
+
+            <!-- Call Friends -->
+            <div class="calls-block">
+                <div class="calls-block__header">
+                    <h3 class="calls-block__title">Позвонить друзьям</h3>
+                    <a href="#" class="calls-block__link">Показать всех</a>
+                </div>
+                <div class="call-friends-list">
+                    <div class="call-friend-item">
+                        <div class="call-friend-avatar">
+                            <img src="images/profile-avatar.jpg" alt="">
+                        </div>
+                        <span class="call-friend-name">Глеб</span>
+                    </div>
+                    <div class="call-friend-item">
+                        <div class="call-friend-avatar">
+                            <img src="images/friend-alina.jpg" alt="">
+                        </div>
+                        <span class="call-friend-name">Алина</span>
+                    </div>
+                    <div class="call-friend-item">
+                        <div class="call-friend-avatar">
+                            <img src="images/friend-vadim.jpg" alt="">
+                        </div>
+                        <span class="call-friend-name">Вадим</span>
+                    </div>
+                    <div class="call-friend-item">
+                        <div class="call-friend-avatar">
+                            <img src="images/friend-maksim.jpg" alt="">
+                        </div>
+                        <span class="call-friend-name">Тимоха</span>
+                    </div>
+                    <div class="call-friend-item">
+                        <div class="call-friend-avatar">
+                            <img src="images/friend-elizaveta.jpg" alt="">
+                        </div>
+                        <span class="call-friend-name">Валерия</span>
+                    </div>
+                    <div class="call-friend-item">
+                        <div class="call-friend-avatar">
+                            <img src="images/friend-alina.jpg" alt="">
+                        </div>
+                        <span class="call-friend-name">Дарья</span>
+                    </div>
+                    <div class="call-friend-item">
+                        <div class="call-friend-avatar">
+                            <img src="images/friend-ivan.jpg" alt="">
+                        </div>
+                        <span class="call-friend-name">Илья</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Call History -->
+            <div class="calls-block">
+                <div class="calls-block__header">
+                    <h3 class="calls-block__title">История звонков</h3>
+                    <div class="calls-filters">
+                        <button class="calls-filter-btn">
+                            Личные
+                            <svg viewBox="0 0 24 24"><path d="M7 10l5 5 5-5z"/></svg>
+                        </button>
+                        <button class="calls-filter-btn">
+                            Ещё
+                            <svg viewBox="0 0 24 24"><path d="M7 10l5 5 5-5z"/></svg>
+                        </button>
+                    </div>
+                </div>
+                <div class="call-history-list">
+                    <div class="call-history-item">
+                        <div class="call-history-avatar">
+                            <img src="images/friend-maksim.jpg" alt="">
+                        </div>
+                        <div class="call-history-info">
+                            <div class="call-history-name">Дмитрий Гайдуков (4)</div>
+                            <div class="call-history-meta">
+                                <svg viewBox="0 0 24 24"><path d="M9 5l7 7-7 7"/></svg>
+                                Отменённый · 20 сентября 2025
+                            </div>
+                        </div>
+                        <div class="call-history-actions">
+                            <button class="call-history-action">
+                                <svg viewBox="0 0 24 24"><path d="M20.01 15.38c-1.23 0-2.42-.2-3.53-.56-.35-.12-.74-.03-1.01.24l-1.57 1.97c-2.83-1.35-5.48-3.9-6.89-6.83l1.95-1.66c.27-.28.35-.67.24-1.02-.37-1.11-.56-2.3-.56-3.53 0-.54-.45-.99-.99-.99H4.19C3.65 3 3 3.24 3 3.99 3 13.28 10.73 21 20.01 21c.71 0 .99-.63.99-1.18v-3.45c0-.54-.45-.99-.99-.99z"/></svg>
+                            </button>
+                            <button class="call-history-action">
+                                <svg viewBox="0 0 24 24"><path d="M17 10.5V7c0-.55-.45-1-1-1H4c-.55 0-1 .45-1 1v10c0 .55.45 1 1 1h12c.55 0 1-.45 1-1v-3.5l4 4v-11l-4 4z"/></svg>
+                            </button>
+                            <button class="call-history-action">
+                                <svg viewBox="0 0 24 24"><path d="M6 10c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm12 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm-6 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"/></svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <aside class="calls-sidebar">
+            <div class="calls-nav">
+                <div class="calls-nav__item active">Главная</div>
+                <div class="calls-nav__item">Позвонить друзьям</div>
+                <div class="calls-nav__item">Активные</div>
+                <div class="calls-nav__item">Запланированные</div>
+                <div class="calls-nav__item">История</div>
+                <div class="calls-nav__item">Пропущенные</div>
+                <div class="calls-nav__item">Записи звонков</div>
+                <div class="calls-nav__item">Расшифровки звонков</div>
+            </div>
+
+            <div class="calls-widget">
+                <div class="calls-widget__content">
+                    <div class="calls-widget__text">
+                        <div class="calls-widget__title">Расшифровка и субтитры</div>
+                        <div class="calls-widget__subtitle">Когда удобнее видеть текст</div>
+                    </div>
+                    <button class="calls-widget__btn">Подробнее</button>
+                </div>
+                <div class="calls-widget__image">
+                    <img src="images/calls-widget.jpg" alt="">
+                </div>
+            </div>
+
+            <div class="calls-widget-large">
+                <div class="calls-widget-large__header">
+                    <img src="images/logo.png" alt="VK" class="calls-widget-large__logo">
+                    <span class="calls-widget-large__title">ВКОНТАКТЕ</span>
+                </div>
+                <div class="calls-widget-large__content">
+                    <h4 class="calls-widget-large__heading">Звоните друзьям и создавайте видеоконференции</h4>
+                    <p class="calls-widget-large__text">Без ограничений по времени и количеству участников</p>
+                </div>
+                <div class="calls-widget-large__apps">
+                    <div class="app-section">
+                        <div class="app-section__title">Приложение для смартфона</div>
+                        <button class="app-btn">
+                            <svg viewBox="0 0 24 24"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
+                            <div>
+                                <div class="app-btn__small">Загрузите в</div>
+                                <div class="app-btn__large">App Store</div>
+                            </div>
+                        </button>
+                        <button class="app-btn">
+                            <svg viewBox="0 0 24 24"><path d="M3,20.5V3.5C3,2.91 3.34,2.39 3.84,2.15L13.69,12L3.84,21.85C3.34,21.6 3,21.09 3,20.5M16.81,15.12L6.05,21.34L14.54,12.85L16.81,15.12M20.16,10.81C20.5,11.08 20.75,11.5 20.75,12C20.75,12.5 20.53,12.9 20.18,13.18L17.89,14.5L15.39,12L17.89,9.5L20.16,10.81M6.05,2.66L16.81,8.88L14.54,11.15L6.05,2.66Z"/></svg>
+                            <div>
+                                <div class="app-btn__small">СКАЧАТЬ ИЗ</div>
+                                <div class="app-btn__large">Google Play</div>
+                            </div>
+                        </button>
+                        <button class="app-btn">
+                            <svg viewBox="0 0 24 24"><path d="M3.5,5.5L5,4L6.5,5.5L5,7L3.5,5.5M7,5.5L8.5,4L10,5.5L8.5,7L7,5.5M10.5,5.5L12,4L13.5,5.5L12,7L10.5,5.5M14,5.5L15.5,4L17,5.5L15.5,7L14,5.5M17.5,5.5L19,4L20.5,5.5L19,7L17.5,5.5M3.5,9.5L5,8L6.5,9.5L5,11L3.5,9.5M7,9.5L8.5,8L10,9.5L8.5,11L7,9.5M10.5,9.5L12,8L13.5,9.5L12,11L10.5,9.5M14,9.5L15.5,8L17,9.5L15.5,11L14,9.5M17.5,9.5L19,8L20.5,9.5L19,11L17.5,9.5M3.5,13.5L5,12L6.5,13.5L5,15L3.5,13.5M7,13.5L8.5,12L10,13.5L8.5,15L7,13.5M10.5,13.5L12,12L13.5,13.5L12,15L10.5,13.5M14,13.5L15.5,12L17,13.5L15.5,15L14,13.5M17.5,13.5L19,12L20.5,13.5L19,15L17.5,13.5M3.5,17.5L5,16L6.5,17.5L5,19L3.5,17.5M7,17.5L8.5,16L10,17.5L8.5,19L7,17.5M10.5,17.5L12,16L13.5,17.5L12,19L10.5,17.5M14,17.5L15.5,16L17,17.5L15.5,19L14,17.5M17.5,17.5L19,16L20.5,17.5L19,19L17.5,17.5Z"/></svg>
+                            <div>
+                                <div class="app-btn__small">Доступно в</div>
+                                <div class="app-btn__large">RuStore</div>
+                            </div>
+                        </button>
+                    </div>
+                    <div class="app-section">
+                        <div class="app-section__title">Приложение для компьютера</div>
+                        <button class="app-btn">
+                            <svg viewBox="0 0 24 24"><path d="M3,5H21V19H3V5M5,7V17H19V7H5Z"/></svg>
+                            <div>
+                                <div class="app-btn__large">Windows</div>
+                            </div>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </aside>
+    </div>
+
+</body>
+</html>

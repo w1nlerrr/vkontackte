@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Астемир Мастафов — ВКонтакте</title>
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header class="header">
+        <div class="header__container">
+            <a href="index.html" class="header__logo">
+                <img src="images/logo.png" alt="VK" class="header__logo-icon">
+                <span>ВКонтакте</span>
+            </a>
+            <div class="header__search">
+                <input type="text" placeholder="Поиск">
+            </div>
+            <div class="header__icons">
+                <button class="header__icon">
+                    <svg viewBox="0 0 24 24"><path d="M12 22c1.1 0 2-.9 2-2h-4c0 1.1.9 2 2 2zm6-6v-5c0-3.07-1.63-5.64-4.5-6.32V4c0-.83-.67-1.5-1.5-1.5s-1.5.67-1.5 1.5v.68C7.64 5.36 6 7.92 6 11v5l-2 2v1h16v-1l-2-2z"/></svg>
+                </button>
+                <button class="header__icon">
+                    <svg viewBox="0 0 24 24"><path d="M9 18V5l12-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="18" cy="16" r="3"/></svg>
+                </button>
+                <div class="header__avatar">
+                    <img src="images/profile-avatar.jpg" alt="Профиль">
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="layout">
+        <nav class="left-sidebar">
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="profile.html" class="nav-link active">
+                        <img src="images/icon-profile.png" alt="" class="nav-icon-img">
+                        <span>Профиль</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">
+                        <img src="images/icon-feed.png" alt="" class="nav-icon-img">
+                        <span>Лента</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="messages.html" class="nav-link">
+                        <img src="images/icon-messenger.png" alt="" class="nav-icon-img">
+                        <span>Мессенджер</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="calls.html" class="nav-link">
+                        <img src="images/icon-calls.png" alt="" class="nav-icon-img">
+                        <span>Звонки</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="friends.html" class="nav-link">
+                        <img src="images/icon-friends.png" alt="" class="nav-icon-img">
+                        <span>Друзья</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="communities.html" class="nav-link">
+                        <img src="images/icon-communities.png" alt="" class="nav-icon-img">
+                        <span>Сообщества</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="photos.html" class="nav-link">
+                        <img src="images/icon-photos.png" alt="" class="nav-icon-img">
+                        <span>Фото</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="music.html" class="nav-link">
+                        <img src="images/icon-music.png" alt="" class="nav-icon-img">
+                        <span>Музыка</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">
+                        <img src="images/icon-video.png" alt="" class="nav-icon-img">
+                        <span>Видео</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">
+                        <img src="images/icon-clips.png" alt="" class="nav-icon-img">
+                        <span>Клипы</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">
+                        <img src="images/icon-games.png" alt="" class="nav-icon-img">
+                        <span>Игры</span>
+                        <span class="nav-badge">2</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="stickers.html" class="nav-link">
+                        <img src="images/icon-stickers.png" alt="" class="nav-icon-img">
+                        <span>Стикеры</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">
+                        <img src="images/icon-market.png" alt="" class="nav-icon-img">
+                        <span>Маркет</span>
+                    </a>
+                </li>
+                <li class="nav-divider"></li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">
+                        <img src="images/icon-services.png" alt="" class="nav-icon-img">
+                        <span>Сервисы</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">
+                        <img src="images/icon-votes.png" alt="" class="nav-icon-img">
+                        <span>Голоса</span>
+                    </a>
+                </li>
+                <li class="nav-divider"></li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">
+                        <img src="images/icon-bookmarks.png" alt="" class="nav-icon-img">
+                        <span>Закладки</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">
+                        <img src="images/icon-advertising.png" alt="" class="nav-icon-img">
+                        <span>Реклама</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">
+                        <img src="images/icon-help.png" alt="" class="nav-icon-img">
+                        <span>Помощь</span>
+                    </a>
+                </li>
+                <li class="nav-divider"></li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">
+                        <img src="images/icon-people-nearby.png" alt="" class="nav-icon-img">
+                        <span>Люди рядом</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+
+        <div class="profile-layout">
+            
+            <!-- PROFILE HEADER -->
+            <div class="profile-header">
+                <div class="profile-cover">
+                    <img class="profile-cover__image" src="images/profile-cover.jpg" alt="Обложка">
+                </div>
+                <div class="profile-info">
+                    <div class="profile-avatar-wrapper">
+                        <div class="profile-avatar">
+                            <img src="images/profile-avatar.jpg" alt="Аватар">
+                        </div>
+                        <div class="profile-avatar__add">
+                            <svg viewBox="0 0 24 24"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/></svg>
+                        </div>
+                    </div>
+                    <div class="profile-details">
+                        <div class="profile-name">
+                            Астемир Мастафов
+                            <svg class="profile-name__verified" viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                        </div>
+                        <div class="profile-status">Укажите информацию о себе ›</div>
+                    </div>
+                    <div class="profile-actions">
+                        <button class="btn-edit">Редактировать профиль</button>
+                        <button class="btn-icon">
+                            <svg viewBox="0 0 24 24"><path d="M3.5 18.49l6-6.01 4 4L22 6.92l-1.41-1.41-7.09 7.97-4-4L2 16.99z"/></svg>
+                        </button>
+                        <button class="btn-more">Ещё <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><path d="M7 10l5 5 5-5z"/></svg></button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- PROFILE CONTENT -->
+            <div class="profile-content">
+                <div class="profile-main">
+                    
+                    <!-- TABS -->
+                    <div class="profile-tabs">
+                        <div class="profile-tab active">
+                            <svg viewBox="0 0 24 24"><path d="M9 18V5l12-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="18" cy="16" r="3"/></svg>
+                            Музыка
+                        </div>
+                        <div class="profile-tab">
+                            <svg viewBox="0 0 24 24"><polygon points="23 7 16 12 23 17 23 7"/><rect x="1" y="5" width="15" height="14" rx="2" ry="2"/></svg>
+                            Видео
+                        </div>
+                        <div class="profile-tab">
+                            <svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
+                            Альбомы
+                        </div>
+                        <div class="profile-tab">
+                            <svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
+                            Фото
+                        </div>
+                        <div class="profile-tab">
+                            <svg viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="2.18" ry="2.18"/><line x1="7" y1="2" x2="7" y2="22"/><line x1="17" y1="2" x2="17" y2="22"/></svg>
+                            Клипы
+                        </div>
+                        <div class="profile-tab">
+                            <svg viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+                            Статьи
+                        </div>
+                    </div>
+
+                    <!-- MUSIC BLOCK -->
+                    <div class="music-block">
+                        <div class="music-albums">
+                            <div class="album-card">
+                                <div class="album-card__cover">
+                                    <img src="images/album1.jpg" alt="AA LANGUAGE 2">
+                                </div>
+                                <div class="album-card__name">AA LANGUAGE 2</div>
+                            </div>
+                            <div class="album-card">
+                                <div class="album-card__cover">
+                                    <img src="images/album2.jpg" alt="QUATTRO">
+                                </div>
+                                <div class="album-card__name">QUATTRO: La Famiglia</div>
+                            </div>
+                            <div class="album-card">
+                                <div class="album-card__cover">
+                                    <img src="images/album3.jpg" alt="Cruiser Aurora">
+                                </div>
+                                <div class="album-card__name">Cruiser Aurora</div>
+                            </div>
+                            <div class="album-card">
+                                <div class="album-card__cover">
+                                    <img src="images/album4.jpg" alt="Struggle">
+                                </div>
+                                <div class="album-card__name">Struggle</div>
+                            </div>
+                            <div class="album-card">
+                                <div class="album-card__cover">
+                                    <img src="images/album5.jpg" alt="Youn...">
+                                </div>
+                                <div class="album-card__name">Youn...</div>
+                            </div>
+                        </div>
+
+                        <div class="track-list">
+                            <div class="track-item">
+                                <div class="track-cover">
+                                    <img src="images/track1.jpg" alt="">
+                                </div>
+                                <div class="track-info">
+                                    <div class="track-name">Групп JERK REMIX</div>
+                                    <div class="track-artist">Платина & Og Buda</div>
+                                </div>
+                                <div class="track-duration">2:53</div>
+                            </div>
+                            <div class="track-item">
+                                <div class="track-cover">
+                                    <img src="images/track2.jpg" alt="">
+                                </div>
+                                <div class="track-info">
+                                    <div class="track-name">Такой (jerk remix by ta...</div>
+                                    <div class="track-artist">Elvira T</div>
+                                </div>
+                                <div class="track-duration">2:31</div>
+                            </div>
+                            <div class="track-item">
+                                <div class="track-cover">
+                                    <img src="images/track3.jpg" alt="">
+                                </div>
+                                <div class="track-info">
+                                    <div class="track-name">TSM (Hood trap remix)</div>
+                                    <div class="track-artist">MACAN</div>
+                                </div>
+                                <div class="track-duration">1:46</div>
+                            </div>
+                            <div class="track-item">
+                                <div class="track-cover">
+                                    <img src="images/track4.jpg" alt="">
+                                </div>
+                                <div class="track-info">
+                                    <div class="track-name">REMIX Friendly Thug (...</div>
+                                    <div class="track-artist">ThreeN1ne</div>
+                                </div>
+                                <div class="track-duration">1:58</div>
+                            </div>
+                        </div>
+
+                        <button class="btn-show-all">Показать всё</button>
+
+                        <div class="privacy-note">
+                            <svg viewBox="0 0 24 24"><path d="M18 8h-1V6c0-2.76-2.24-5-5-5S7 3.24 7 6v2H6c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V10c0-1.1-.9-2-2-2zM12 17c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2zM9 8V6c0-1.66 1.34-3 3-3s3 1.34 3 3v2H9z"/></svg>
+                            Аудиозаписи видны только вам · <a href="#">Изменить</a>
+                        </div>
+                    </div>
+
+                    <!-- CREATE POST -->
+                    <div class="create-post-profile">
+                        <div class="create-post__left">
+                            <div class="create-post__avatar">
+                                <img src="images/profile-avatar.jpg" alt="">
+                            </div>
+                            <span class="create-post__text">Создать пост</span>
+                        </div>
+                        <div class="create-post__actions">
+                            <button class="create-post__btn">
+                                <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
+                            </button>
+                            <button class="create-post__btn">
+                                <svg viewBox="0 0 24 24"><path d="M3 13h2v-2H3v2zm0 4h2v-2H3v2zm0-8h2V7H3v2zm4 4h14v-2H7v2zm0 4h14v-2H7v2zM7 7v2h14V7H7z"/></svg>
+                            </button>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- RIGHT SIDE -->
+                <div class="profile-side">
+                    
+                    <!-- 2FA WIDGET -->
+                    <div class="widget-2fa">
+                        <div class="widget-2fa__icon">
+                            <img src="images/icon-2fa.png" alt="2FA" class="widget-2fa__icon-img">
+                        </div>
+                        <div class="widget-2fa__content">
+                            <div class="widget-2fa__title">Подключите 2FA</div>
+                            <div class="widget-2fa__text">Настройте подтверждение входа для защиты аккаунта</div>
+                        </div>
+                        <div class="widget-2fa__close">
+                            <svg viewBox="0 0 24 24"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+                        </div>
+                    </div>
+
+                    <!-- FRIENDS ONLINE -->
+                    <div class="friends-online">
+                        <div class="friends-online__header">
+                            <span class="friends-online__title">Друзья онлайн</span>
+                            <span class="friends-online__count">3</span>
+                        </div>
+                        <div class="friends-online__list">
+                            <div class="friend-online-item">
+                                <div class="friend-online-avatar">
+                                    <img src="images/friend-alina.jpg" alt="Алина">
+                                    <div class="friend-online-avatar__status"></div>
+                                </div>
+                                <span class="friend-online-name">Алина</span>
+                            </div>
+                            <div class="friend-online-item">
+                                <div class="friend-online-avatar">
+                                    <img src="images/friend-maksim.jpg" alt="Максим">
+                                    <div class="friend-online-avatar__status"></div>
+                                </div>
+                                <span class="friend-online-name">Максим</span>
+                            </div>
+                            <div class="friend-online-item">
+                                <div class="friend-online-avatar">
+                                    <img src="images/friend-elizaveta.jpg" alt="Елизавета">
+                                    <div class="friend-online-avatar__status"></div>
+                                </div>
+                                <span class="friend-online-name">Елизавета</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- FRIENDS -->
+                    <div class="friends-widget">
+                        <div class="friends-widget__header">
+                            <span class="friends-widget__title">Друзья</span>
+                            <span class="friends-widget__count">33</span>
+                        </div>
+                        <div class="friends-widget__list">
+                            <div class="friend-item">
+                                <div class="friend-avatar">
+                                    <img src="images/friend-vadim.jpg" alt="Вадим">
+                                </div>
+                                <span class="friend-name">Вадим</span>
+                            </div>
+                            <div class="friend-item">
+                                <div class="friend-avatar">
+                                    <img src="images/friend-alina.jpg" alt="Алина">
+                                </div>
+                                <span class="friend-name">Алина</span>
+                            </div>
+                            <div class="friend-item">
+                                <div class="friend-avatar">
+                                    <img src="images/profile-avatar.jpg" alt="Глеб">
+                                </div>
+                                <span class="friend-name">Глеб</span>
+                            </div>
+                            <div class="friend-item">
+                                <div class="friend-avatar">
+                                    <img src="images/friend-ivan.jpg" alt="Иван">
+                                </div>
+                                <span class="friend-name">Иван</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- GIFTS -->
+                    <div class="gifts-widget">
+                        <div class="gifts-widget__header">
+                            <span class="gifts-widget__title">Подарки</span>
+                            <span class="gifts-widget__count">54</span>
+                        </div>
+                        <div class="gifts-preview">
+                            <div class="gift-item">
+                                <img src="images/gift1.png" alt="Подарок 1" class="gift-img">
+                            </div>
+                            <div class="gift-item">
+                                <img src="images/gift2.png" alt="Подарок 2" class="gift-img">
+                            </div>
+                            <div class="gift-item">
+                                <img src="images/gift3.png" alt="Подарок 3" class="gift-img">
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</body>
+</html>

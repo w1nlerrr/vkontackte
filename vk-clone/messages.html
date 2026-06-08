@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Мессенджер — ВКонтакте</title>
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header class="header">
+        <div class="header__container">
+            <a href="index.html" class="header__logo">
+                <img src="images/logo.png" alt="VK" class="header__logo-icon">
+                <span class="header__logo-text">ВКонтакте</span>
+            </a>
+            
+            <div class="header__search">
+                <svg class="header__search-icon" viewBox="0 0 24 24">
+                    <path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/>
+                </svg>
+                <input type="text" placeholder="Поиск">
+            </div>
+            
+            <div class="header__icons">
+                <button class="header__icon">
+                    <svg viewBox="0 0 24 24"><path d="M12 22c1.1 0 2-.9 2-2h-4c0 1.1.9 2 2 2zm6-6v-5c0-3.07-1.63-5.64-4.5-6.32V4c0-.83-.67-1.5-1.5-1.5s-1.5.67-1.5 1.5v.68C7.64 5.36 6 7.92 6 11v5l-2 2v1h16v-1l-2-2z"/></svg>
+                </button>
+                <button class="header__icon">
+                    <svg viewBox="0 0 24 24"><path d="M12 3v10.55c-.59-.34-1.27-.55-2-.55-2.21 0-4 1.79-4 4s1.79 4 4 4 4-1.79 4-4V7h4V3h-6z"/></svg>
+                </button>
+                <div class="header__avatar">
+                    <img src="images/profile-avatar.jpg" alt="Профиль">
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="layout">
+        <nav class="left-sidebar">
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="profile.html" class="nav-link">
+                        <img src="images/icon-profile.png" alt="" class="nav-icon-img">
+                        <span>Профиль</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">
+                        <img src="images/icon-feed.png" alt="" class="nav-icon-img">
+                        <span>Лента</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="messages.html" class="nav-link active">
+                        <img src="images/icon-messenger.png" alt="" class="nav-icon-img">
+                        <span>Мессенджер</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="calls.html" class="nav-link">
+                        <img src="images/icon-calls.png" alt="" class="nav-icon-img">
+                        <span>Звонки</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="friends.html" class="nav-link">
+                        <img src="images/icon-friends.png" alt="" class="nav-icon-img">
+                        <span>Друзья</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="communities.html" class="nav-link">
+                        <img src="images/icon-communities.png" alt="" class="nav-icon-img">
+                        <span>Сообщества</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="photos.html" class="nav-link">
+                        <img src="images/icon-photos.png" alt="" class="nav-icon-img">
+                        <span>Фото</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="music.html" class="nav-link">
+                        <img src="images/icon-music.png" alt="" class="nav-icon-img">
+                        <span>Музыка</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">
+                        <img src="images/icon-video.png" alt="" class="nav-icon-img">
+                        <span>Видео</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">
+                        <img src="images/icon-clips.png" alt="" class="nav-icon-img">
+                        <span>Клипы</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">
+                        <img src="images/icon-games.png" alt="" class="nav-icon-img">
+                        <span>Игры</span>
+                        <span class="nav-badge">2</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="stickers.html" class="nav-link">
+                        <img src="images/icon-stickers.png" alt="" class="nav-icon-img">
+                        <span>Стикеры</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">
+                        <img src="images/icon-market.png" alt="" class="nav-icon-img">
+                        <span>Маркет</span>
+                    </a>
+                </li>
+                <li class="nav-divider"></li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">
+                        <img src="images/icon-services.png" alt="" class="nav-icon-img">
+                        <span>Сервисы</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">
+                        <img src="images/icon-votes.png" alt="" class="nav-icon-img">
+                        <span>Голоса</span>
+                    </a>
+                </li>
+                <li class="nav-divider"></li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">
+                        <img src="images/icon-bookmarks.png" alt="" class="nav-icon-img">
+                        <span>Закладки</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">
+                        <img src="images/icon-advertising.png" alt="" class="nav-icon-img">
+                        <span>Реклама</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">
+                        <img src="images/icon-help.png" alt="" class="nav-icon-img">
+                        <span>Помощь</span>
+                    </a>
+                </li>
+                <li class="nav-divider"></li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">
+                        <img src="images/icon-people-nearby.png" alt="" class="nav-icon-img">
+                        <span>Люди рядом</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+
+        <main class="messenger-main">
+            <div class="messenger-header">
+                <button class="messenger-menu-btn">
+                    <svg viewBox="0 0 24 24"><path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/></svg>
+                </button>
+                <h1 class="messenger-title">Мессенджер</h1>
+                <div class="messenger-actions">
+                    <button class="messenger-action-btn">
+                        <svg viewBox="0 0 24 24"><path d="M20.01 15.38c-1.23 0-2.42-.2-3.53-.56-.35-.12-.74-.03-1.01.24l-1.57 1.97c-2.83-1.35-5.48-3.9-6.89-6.83l1.95-1.66c.27-.28.35-.67.24-1.02-.37-1.11-.56-2.3-.56-3.53 0-.54-.45-.99-.99-.99H4.19C3.65 3 3 3.24 3 3.99 3 13.28 10.73 21 20.01 21c.71 0 .99-.63.99-1.18v-3.45c0-.54-.45-.99-.99-.99z"/></svg>
+                    </button>
+                    <button class="messenger-action-btn">
+                        <svg viewBox="0 0 24 24"><path d="M19 7v10c0 1.1-.9 2-2 2H7c-1.1 0-2-.9-2-2V7c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2zm-2-4H7c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h10c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2z"/></svg>
+                    </button>
+                    <button class="messenger-action-btn">
+                        <svg viewBox="0 0 24 24"><path d="M19 19H5V5h14v14zM3 3v18h18V3H3zm11.5 9.5l4-4-1.5-1.5-2.5 2.5-2.5-2.5L10.5 9l4 4z"/></svg>
+                    </button>
+                </div>
+            </div>
+
+            <div class="messenger-search">
+                <svg class="messenger-search-icon" viewBox="0 0 24 24">
+                    <path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/>
+                </svg>
+                <input type="text" placeholder="Поиск" class="messenger-search-input">
+            </div>
+
+            <div class="messenger-tabs">
+                <button class="messenger-tab active">Все</button>
+                <button class="messenger-tab">Каналы <span class="messenger-tab-badge">6</span></button>
+                <button class="messenger-tab">Бизнес <span class="messenger-tab-badge">1</span></button>
+                <button class="messenger-tab-settings">
+                    <svg viewBox="0 0 24 24"><path d="M19.14 12.94c.04-.3.06-.61.06-.94 0-.32-.02-.64-.07-.94l2.03-1.58c.18-.14.23-.41.12-.61l-1.92-3.32c-.12-.22-.37-.29-.59-.22l-2.39.96c-.5-.38-1.03-.7-1.62-.94l-.36-2.54c-.04-.24-.24-.41-.48-.41h-3.84c-.24 0-.43.17-.47.41l-.36 2.54c-.59.24-1.13.57-1.62.94l-2.39-.96c-.22-.08-.47 0-.59.22L5.09 8.87c-.12.21-.08.47.12.61l2.03 1.58c-.05.3-.09.63-.09.94s.02.64.07.94l-2.03 1.58c-.18.14-.23.41-.12.61l1.92 3.32c.12.22.37.29.59.22l2.39-.96c.5.38 1.03.7 1.62.94l.36 2.54c.05.24.24.41.48.41h3.84c.24 0 .44-.17.47-.41l.36-2.54c.59-.24 1.13-.56 1.62-.94l2.39.96c.22.08.47 0 .59-.22l1.92-3.32c.12-.22.07-.47-.12-.61l-2.01-1.58zM12 15.6c-1.98 0-3.6-1.62-3.6-3.6s1.62-3.6 3.6-3.6 3.6 1.62 3.6 3.6-1.62 3.6-3.6 3.6z"/></svg>
+                </button>
+            </div>
+
+            <div class="conversations-list">
+                <div class="conversation-item">
+                    <div class="conversation-avatar">
+                        <img src="images/friend-maksim.jpg" alt="">
+                    </div>
+                    <div class="conversation-content">
+                        <div class="conversation-header">
+                            <span class="conversation-name">Ровшан Гусейнов</span>
+                            <span class="conversation-time">2 д</span>
+                        </div>
+                        <div class="conversation-message">
+                            <span class="conversation-text">Вы: https://s.stun.su/zcJoyZgaDyNSVjt7</span>
+                            <span class="conversation-checks">
+                                <svg viewBox="0 0 24 24"><path d="M18 7l-1.41-1.41-6.34 6.34 1.41 1.41L18 7zm4.24-1.41L11.66 16.17 7.48 12l-1.41 1.41L11.66 19l12-12-1.42-1.41zM.41 13.41L6 19l1.41-1.41L1.83 12 .41 13.41z"/></svg>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="conversation-item">
+                    <div class="conversation-avatar">
+                        <img src="images/profile-avatar.jpg" alt="">
+                    </div>
+                    <div class="conversation-content">
+                        <div class="conversation-header">
+                            <span class="conversation-name">Глеб Янкович</span>
+                            <span class="conversation-time">4 д</span>
+                        </div>
+                        <div class="conversation-message">
+                            <span class="conversation-text">Вы: 13 теория 19 вождение</span>
+                            <button class="conversation-add">
+                                <svg viewBox="0 0 24 24"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/></svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="conversation-item">
+                    <div class="conversation-avatar">
+                        <img src="images/friend-alina.jpg" alt="">
+                    </div>
+                    <div class="conversation-content">
+                        <div class="conversation-header">
+                            <span class="conversation-name">Вадим Кузьмичев</span>
+                            <span class="conversation-time">2 ч</span>
+                        </div>
+                        <div class="conversation-message">
+                            <span class="conversation-text">Вы: void __fastcall TForm::btnCancelClick(TObject *Sender) { if(...</span>
+                            <span class="conversation-checks">
+                                <svg viewBox="0 0 24 24"><path d="M18 7l-1.41-1.41-6.34 6.34 1.41 1.41L18 7zm4.24-1.41L11.66 16.17 7.48 12l-1.41 1.41L11.66 19l12-12-1.42-1.41zM.41 13.41L6 19l1.41-1.41L1.83 12 .41 13.41z"/></svg>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="conversation-item">
+                    <div class="conversation-avatar">
+                        <img src="images/friend-vadim.jpg" alt="">
+                    </div>
+                    <div class="conversation-content">
+                        <div class="conversation-header">
+                            <span class="conversation-name">Тимоха Maykov</span>
+                        </div>
+                        <div class="conversation-message">
+                            <span class="conversation-text">Вы: , CONSTRAINT FK_history_user FOREIGN KEY (user_id) REFEREN...</span>
+                            <span class="conversation-time">4 ч</span>
+                            <span class="conversation-checks">
+                                <svg viewBox="0 0 24 24"><path d="M18 7l-1.41-1.41-6.34 6.34 1.41 1.41L18 7zm4.24-1.41L11.66 16.17 7.48 12l-1.41 1.41L11.66 19l12-12-1.42-1.41zM.41 13.41L6 19l1.41-1.41L1.83 12 .41 13.41z"/></svg>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="conversation-item">
+                    <div class="conversation-avatar">
+                        <img src="images/friend-elizaveta.jpg" alt="">
+                    </div>
+                    <div class="conversation-content">
+                        <div class="conversation-header">
+                            <span class="conversation-name">СберКот <span class="verified">✓</span></span>
+                        </div>
+                        <div class="conversation-message">
+                            <span class="conversation-text">Открывай мир инвестиций — получай новые возможности. Кота...</span>
+                            <span class="conversation-time">7 мая</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="conversation-item">
+                    <div class="conversation-avatar">
+                        <img src="images/friend-ivan.jpg" alt="">
+                    </div>
+                    <div class="conversation-content">
+                        <div class="conversation-header">
+                            <span class="conversation-name">Алина Ефимова 😂</span>
+                        </div>
+                        <div class="conversation-message">
+                            <span class="conversation-text">мда треш какой-то в общем</span>
+                            <span class="conversation-time">4 мая</span>
+                            <button class="conversation-add">
+                                <svg viewBox="0 0 24 24"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/></svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="conversation-item">
+                    <div class="conversation-avatar">
+                        <img src="images/friend-maksim.jpg" alt="">
+                    </div>
+                    <div class="conversation-content">
+                        <div class="conversation-header">
+                            <span class="conversation-name">Юрий Эгурский</span>
+                        </div>
+                        <div class="conversation-message">
+                            <span class="conversation-text">Вы: Сегодня во сколько можете?</span>
+                            <span class="conversation-time">26 апр</span>
+                            <button class="conversation-add">
+                                <svg viewBox="0 0 24 24"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/></svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="conversation-item">
+                    <div class="conversation-avatar">
+                        <img src="images/friend-alina.jpg" alt="">
+                    </div>
+                    <div class="conversation-content">
+                        <div class="conversation-header">
+                            <span class="conversation-name">Полинка Веселова</span>
+                        </div>
+                        <div class="conversation-message">
+                            <span class="conversation-text">Вы: <span class="file-attach">📎 Файл</span></span>
+                            <span class="conversation-time">21 мар</span>
+                            <button class="conversation-add">
+                                <svg viewBox="0 0 24 24"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/></svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="conversation-item">
+                    <div class="conversation-avatar">
+                        <img src="images/friend-vadim.jpg" alt="">
+                    </div>
+                    <div class="conversation-content">
+                        <div class="conversation-header">
+                            <span class="conversation-name">Снежана Цветкова</span>
+                        </div>
+                        <div class="conversation-message">
+                            <span class="conversation-text">Вы: Здравствуйте Снежана Романовна <span class="photos-count">3 фотографии</span></span>
+                            <span class="conversation-time">20 фев</span>
+                            <button class="conversation-add">
+                                <svg viewBox="0 0 24 24"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/></svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="conversation-item">
+                    <div class="conversation-avatar">
+                        <img src="images/friend-elizaveta.jpg" alt="">
+                    </div>
+                    <div class="conversation-content">
+                        <div class="conversation-header">
+                            <span class="conversation-name">Dsm Icons <span class="verified">✓</span></span>
+                        </div>
+                        <div class="conversation-message">
+                            <span class="conversation-text">Можно подарить что-нибудь себе, а можно и не себе. Мож...</span>
+                            <span class="conversation-time">20 дек 2025</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="conversation-item">
+                    <div class="conversation-avatar">
+                        <img src="images/friend-ivan.jpg" alt="">
+                    </div>
+                    <div class="conversation-content">
+                        <div class="conversation-header">
+                            <span class="conversation-name">Кирилл Чернышёв 💜</span>
+                        </div>
+                        <div class="conversation-message">
+                            <span class="conversation-text">Вы: Нет <span class="message-attach">💬 Сообщение</span></span>
+                            <span class="conversation-time">28 окт 2025</span>
+                            <span class="conversation-checks">
+                                <svg viewBox="0 0 24 24"><path d="M18 7l-1.41-1.41-6.34 6.34 1.41 1.41L18 7zm4.24-1.41L11.66 16.17 7.48 12l-1.41 1.41L11.66 19l12-12-1.42-1.41zM.41 13.41L6 19l1.41-1.41L1.83 12 .41 13.41z"/></svg>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="messenger-footer">
+                <label class="unread-toggle">
+                    <svg viewBox="0 0 24 24"><path d="M20 2H4c-1.1 0-2 .9-2 2v18l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2z"/></svg>
+                    <span>Только непрочитанные</span>
+                    <input type="checkbox" class="toggle-checkbox">
+                </label>
+            </div>
+        </main>
+
+        <aside class="messenger-sidebar">
+            <div class="promo-banner">
+                <div class="promo-close">
+                    <svg viewBox="0 0 24 24"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+                </div>
+                <div class="promo-content">
+                    <div class="promo-text">
+                        <span class="promo-highlight">Новый интерфейс!</span> Появились папки и фоны. А знаете, что ещё?
+                    </div>
+                    <button class="promo-btn">Любопытно</button>
+                </div>
+                <div class="promo-arrow">
+                    <svg viewBox="0 0 24 24"><path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"/></svg>
+                </div>
+            </div>
+
+            <div class="messenger-filters">
+                <div class="filter-item active">Все</div>
+                <div class="filter-item">Непрочитанные</div>
+                <div class="filter-item">Архив</div>
+                <div class="filter-item">Бизнес-уведомления <span class="filter-badge">1</span></div>
+            </div>
+        </aside>
+    </div>
+
+</body>
+</html>

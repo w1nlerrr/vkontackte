@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Музыка — ВКонтакте</title>
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header class="header">
+        <div class="header__container">
+            <a href="index.html" class="header__logo">
+                <img src="images/logo.png" alt="VK" class="header__logo-icon">
+                <span class="header__logo-text">ВКонтакте</span>
+            </a>
+            
+            <div class="header__search">
+                <svg class="header__search-icon" viewBox="0 0 24 24">
+                    <path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/>
+                </svg>
+                <input type="text" placeholder="Поиск">
+            </div>
+            
+            <div class="header__icons">
+                <button class="header__icon">
+                    <svg viewBox="0 0 24 24"><path d="M12 22c1.1 0 2-.9 2-2h-4c0 1.1.9 2 2 2zm6-6v-5c0-3.07-1.63-5.64-4.5-6.32V4c0-.83-.67-1.5-1.5-1.5s-1.5.67-1.5 1.5v.68C7.64 5.36 6 7.92 6 11v5l-2 2v1h16v-1l-2-2z"/></svg>
+                </button>
+                <button class="header__icon">
+                    <svg viewBox="0 0 24 24"><path d="M12 3v10.55c-.59-.34-1.27-.55-2-.55-2.21 0-4 1.79-4 4s1.79 4 4 4 4-1.79 4-4V7h4V3h-6z"/></svg>
+                </button>
+                <div class="header__avatar">
+                    <img src="images/profile-avatar.jpg" alt="Профиль">
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="layout">
+        <nav class="left-sidebar">
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="profile.html" class="nav-link">
+                        <img src="images/icon-profile.png" alt="" class="nav-icon-img">
+                        <span>Профиль</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">
+                        <img src="images/icon-feed.png" alt="" class="nav-icon-img">
+                        <span>Лента</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="messages.html" class="nav-link">
+                        <img src="images/icon-messenger.png" alt="" class="nav-icon-img">
+                        <span>Мессенджер</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="calls.html" class="nav-link">
+                        <img src="images/icon-calls.png" alt="" class="nav-icon-img">
+                        <span>Звонки</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="friends.html" class="nav-link">
+                        <img src="images/icon-friends.png" alt="" class="nav-icon-img">
+                        <span>Друзья</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="communities.html" class="nav-link">
+                        <img src="images/icon-communities.png" alt="" class="nav-icon-img">
+                        <span>Сообщества</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="photos.html" class="nav-link">
+                        <img src="images/icon-photos.png" alt="" class="nav-icon-img">
+                        <span>Фото</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="music.html" class="nav-link active">
+                        <img src="images/icon-music.png" alt="" class="nav-icon-img">
+                        <span>Музыка</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">
+                        <img src="images/icon-video.png" alt="" class="nav-icon-img">
+                        <span>Видео</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">
+                        <img src="images/icon-clips.png" alt="" class="nav-icon-img">
+                        <span>Клипы</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">
+                        <img src="images/icon-games.png" alt="" class="nav-icon-img">
+                        <span>Игры</span>
+                        <span class="nav-badge">2</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="stickers.html" class="nav-link">
+                        <img src="images/icon-stickers.png" alt="" class="nav-icon-img">
+                        <span>Стикеры</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">
+                        <img src="images/icon-market.png" alt="" class="nav-icon-img">
+                        <span>Маркет</span>
+                    </a>
+                </li>
+                <li class="nav-divider"></li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">
+                        <img src="images/icon-services.png" alt="" class="nav-icon-img">
+                        <span>Сервисы</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">
+                        <img src="images/icon-votes.png" alt="" class="nav-icon-img">
+                        <span>Голоса</span>
+                    </a>
+                </li>
+                <li class="nav-divider"></li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">
+                        <img src="images/icon-bookmarks.png" alt="" class="nav-icon-img">
+                        <span>Закладки</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">
+                        <img src="images/icon-advertising.png" alt="" class="nav-icon-img">
+                        <span>Реклама</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">
+                        <img src="images/icon-help.png" alt="" class="nav-icon-img">
+                        <span>Помощь</span>
+                    </a>
+                </li>
+                <li class="nav-divider"></li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">
+                        <img src="images/icon-people-nearby.png" alt="" class="nav-icon-img">
+                        <span>Люди рядом</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+
+        <main class="music-main">
+            <!-- Promo Banner -->
+            <div class="promo-banner-music">
+                <div class="promo-banner-music__content">
+                    <h2 class="promo-banner-music__title">Целый месяц — 0 ₽</h2>
+                    <p class="promo-banner-music__text">Чтобы собирать свою коллекцию из треков, книг и подкастов!</p>
+                    <button class="promo-banner-music__btn">Подключить</button>
+                    <span class="promo-banner-music__note">только для новых пользователей 12+</span>
+                </div>
+                <div class="promo-banner-music__image">
+                    <img src="images/music-promo.jpg" alt="">
+                </div>
+                <button class="promo-banner-music__close">
+                    <svg viewBox="0 0 24 24"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+                </button>
+            </div>
+
+            <!-- Music Tabs -->
+            <div class="music-tabs-block">
+                <div class="music-tabs">
+                    <button class="music-tab active">Главная</button>
+                    <button class="music-tab">Моя музыка</button>
+                    <button class="music-tab">Обзор</button>
+                    <button class="music-tab">Радио</button>
+                    <button class="music-tab">Обновления</button>
+                </div>
+                <div class="music-actions">
+                    <button class="music-action-btn">
+                        <svg viewBox="0 0 24 24"><path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z"/></svg>
+                    </button>
+                    <button class="music-action-btn">
+                        <svg viewBox="0 0 24 24"><path d="M3 13h2v-2H3v2zm0 4h2v-2H3v2zm0-8h2V7H3v2zm4 4h14v-2H7v2zm0 4h14v-2H7v2zM7 7v2h14V7H7z"/></svg>
+                    </button>
+                    <button class="music-action-btn">
+                        <svg viewBox="0 0 24 24"><path d="M9 16h6v-6h4l-7-7-7 7h4zm-4 2h14v2H5z"/></svg>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Music Search -->
+            <div class="music-search">
+                <input type="text" placeholder="Поиск музыки" class="music-search-input">
+                <button class="music-search-btn">
+                    <svg viewBox="0 0 24 24"><path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/></svg>
+                </button>
+            </div>
+
+            <!-- VK Mix Block -->
+            <div class="vk-mix-block">
+                <div class="vk-mix-block__bg"></div>
+                <button class="vk-mix-block__play">
+                    <svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+                </button>
+                <div class="vk-mix-block__content">
+                    <h3 class="vk-mix-block__title">Слушать VK Микс</h3>
+                    <p class="vk-mix-block__text">Музыкальные рекомендации для вас</p>
+                </div>
+            </div>
+
+            <!-- My Tracks -->
+            <div class="music-block">
+                <div class="music-block__header">
+                    <h3 class="music-block__title">Мои треки</h3>
+                    <a href="#" class="music-block__link">Показать все</a>
+                </div>
+                <div class="tracks-grid">
+                    <div class="track-item">
+                        <div class="track-item__cover">
+                            <img src="images/track1.jpg" alt="">
+                        </div>
+                        <div class="track-item__info">
+                            <div class="track-item__name">Групп JERK REMIX</div>
+                            <div class="track-item__artist">Платина & Og Buda</div>
+                        </div>
+                        <span class="track-item__duration">2:53</span>
+                    </div>
+                    <div class="track-item">
+                        <div class="track-item__cover">
+                            <img src="images/track2.jpg" alt="">
+                        </div>
+                        <div class="track-item__info">
+                            <div class="track-item__name">Такси (jerk remix by tacoy)</div>
+                            <div class="track-item__artist">Elvira T</div>
+                        </div>
+                        <span class="track-item__duration">2:31</span>
+                    </div>
+                    <div class="track-item">
+                        <div class="track-item__cover">
+                            <img src="images/track3.jpg" alt="">
+                        </div>
+                        <div class="track-item__info">
+                            <div class="track-item__name">TSM (Hood trap remix)</div>
+                            <div class="track-item__artist">MACAN</div>
+                        </div>
+                        <span class="track-item__duration">1:46</span>
+                    </div>
+                    <div class="track-item">
+                        <div class="track-item__cover">
+                            <img src="images/track4.jpg" alt="">
+                        </div>
+                        <div class="track-item__info">
+                            <div class="track-item__name">REMIX Friendly Thug (Sorry Mama Ama Still Snip...</div>
+                            <div class="track-item__artist">ThreeN1ne</div>
+                        </div>
+                        <span class="track-item__duration">1:58</span>
+                    </div>
+                    <div class="track-item">
+                        <div class="track-item__cover">
+                            <img src="images/track5.jpg" alt="">
+                        </div>
+                        <div class="track-item__info">
+                            <div class="track-item__name">REMIX Friendly Thug (Sold Out)</div>
+                            <div class="track-item__artist">ThreeN1ne</div>
+                        </div>
+                        <span class="track-item__duration">2:33</span>
+                    </div>
+                    <div class="track-item">
+                        <div class="track-item__cover">
+                            <img src="images/track6.jpg" alt="">
+                        </div>
+                        <div class="track-item__info">
+                            <div class="track-item__name">Москва</div>
+                            <div class="track-item__artist">OTTO FXCK FLOW</div>
+                        </div>
+                        <span class="track-item__duration">1:40</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Algorithm Recommendations -->
+            <div class="music-block">
+                <div class="music-block__header">
+                    <h3 class="music-block__title">Собрано алгоритмами</h3>
+                    <a href="#" class="music-block__link">Настроить рекомендации</a>
+                </div>
+                <div class="algorithm-grid">
+    <div class="algorithm-card">
+        <div class="algorithm-card__cover" style="background: linear-gradient(180deg, #0077ff 0%, #00c6ff 100%);">
+            <div class="algorithm-card__content">
+                <div class="algorithm-card__title">Для вас</div>
+                <div class="algorithm-card__subtitle">обновлён сегодня</div>
+            </div>
+            <div class="algorithm-card__icon">
+                <svg viewBox="0 0 24 24"><path d="M12 3v10.55c-.59-.34-1.27-.55-2-.55-2.21 0-4 1.79-4 4s1.79 4 4 4 4-1.79 4-4V7h4V3h-6z"/></svg>
+            </div>
+        </div>
+    </div>
+    <div class="algorithm-card">
+        <div class="algorithm-card__cover" style="background: linear-gradient(180deg, #d946ef 0%, #ec4899 100%);">
+            <div class="algorithm-card__content">
+                <div class="algorithm-card__title">Открытия</div>
+                <div class="algorithm-card__subtitle">Новое для вас</div>
+            </div>
+            <div class="algorithm-card__icon">
+                <svg viewBox="0 0 24 24"><path d="M12 3v10.55c-.59-.34-1.27-.55-2-.55-2.21 0-4 1.79-4 4s1.79 4 4 4 4-1.79 4-4V7h4V3h-6z"/></svg>
+            </div>
+        </div>
+    </div>
+    <div class="algorithm-card">
+        <div class="algorithm-card__cover" style="background: linear-gradient(180deg, #06b6d4 0%, #22d3ee 100%);">
+            <div class="algorithm-card__content">
+                <div class="algorithm-card__title">Новинки</div>
+                <div class="algorithm-card__subtitle">обновлён в субботу</div>
+            </div>
+            <div class="algorithm-card__icon">
+                <svg viewBox="0 0 24 24"><path d="M12 3v10.55c-.59-.34-1.27-.55-2-.55-2.21 0-4 1.79-4 4s1.79 4 4 4 4-1.79 4-4V7h4V3h-6z"/></svg>
+            </div>
+        </div>
+    </div>
+                    <div class="algorithm-card">
+                        <div class="algorithm-card__cover" style="background: linear-gradient(180deg, #a855f7 0%, #d946ef 100%);">
+                            <div class="algorithm-card__content">
+                                <div class="algorithm-card__title">Плейлист дня 1</div>
+                                <div class="algorithm-card__subtitle">Вы слушали: ALBLAK 52, Hugo Loud, Glocki52</div>
+                            </div>
+                            <div class="algorithm-card__icon">
+                                <svg viewBox="0 0 24 24"><path d="M12 3v10.55c-.59-.34-1.27-.55-2-.55-2.21 0-4 1.79-4 4s1.79 4 4 4 4-1.79 4-4V7h4V3h-6z"/></svg>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="algorithm-card">
+                        <div class="algorithm-card__cover" style="background: linear-gradient(180deg, #ec4899 0%, #f97316 100%);">
+                            <div class="algorithm-card__content">
+                                <div class="algorithm-card__title">Плейлист дня 2</div>
+                                <div class="algorithm-card__subtitle">Вы слушали: yung...</div>
+                            </div>
+                            <div class="algorithm-card__icon">
+                                <svg viewBox="0 0 24 24"><path d="M12 3v10.55c-.59-.34-1.27-.55-2-.55-2.21 0-4 1.79-4 4s1.79 4 4 4 4-1.79 4-4V7h4V3h-6z"/></svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+</body>
+</html>

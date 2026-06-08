@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Стикеры — ВКонтакте</title>
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header class="header">
+        <div class="header__container">
+            <a href="index.html" class="header__logo">
+                <img src="images/logo.png" alt="VK" class="header__logo-icon">
+                <span class="header__logo-text">ВКонтакте</span>
+            </a>
+            <div class="header__search">
+                <svg class="header__search-icon" viewBox="0 0 24 24">
+                    <path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/>
+                </svg>
+                <input type="text" placeholder="Поиск">
+            </div>
+            <div class="header__icons">
+                <button class="header__icon">
+                    <svg viewBox="0 0 24 24"><path d="M12 22c1.1 0 2-.9 2-2h-4c0 1.1.9 2 2 2zm6-6v-5c0-3.07-1.63-5.64-4.5-6.32V4c0-.83-.67-1.5-1.5-1.5s-1.5.67-1.5 1.5v.68C7.64 5.36 6 7.92 6 11v5l-2 2v1h16v-1l-2-2z"/></svg>
+                </button>
+                <button class="header__icon">
+                    <svg viewBox="0 0 24 24"><path d="M12 3v10.55c-.59-.34-1.27-.55-2-.55-2.21 0-4 1.79-4 4s1.79 4 4 4 4-1.79 4-4V7h4V3h-6z"/></svg>
+                </button>
+                <div class="header__avatar">
+                    <img src="images/profile-avatar.jpg" alt="Профиль">
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="layout">
+        <nav class="left-sidebar">
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="profile.html" class="nav-link"><img src="images/icon-profile.png" class="nav-icon-img"><span>Профиль</span></a></li>
+                <li class="nav-item"><a href="index.html" class="nav-link"><img src="images/icon-feed.png" class="nav-icon-img"><span>Лента</span></a></li>
+                <li class="nav-item"><a href="messages.html" class="nav-link"><img src="images/icon-messenger.png" class="nav-icon-img"><span>Мессенджер</span></a></li>
+                <li class="nav-item"><a href="calls.html" class="nav-link"><img src="images/icon-calls.png" class="nav-icon-img"><span>Звонки</span></a></li>
+                <li class="nav-item"><a href="friends.html" class="nav-link"><img src="images/icon-friends.png" class="nav-icon-img"><span>Друзья</span></a></li>
+                <li class="nav-item"><a href="communities.html" class="nav-link"><img src="images/icon-communities.png" class="nav-icon-img"><span>Сообщества</span></a></li>
+                <li class="nav-item"><a href="photos.html" class="nav-link"><img src="images/icon-photos.png" class="nav-icon-img"><span>Фото</span></a></li>
+                <li class="nav-item"><a href="music.html" class="nav-link"><img src="images/icon-music.png" class="nav-icon-img"><span>Музыка</span></a></li>
+                <li class="nav-item"><a href="#" class="nav-link"><img src="images/icon-video.png" class="nav-icon-img"><span>Видео</span></a></li>
+                <li class="nav-item"><a href="#" class="nav-link"><img src="images/icon-clips.png" class="nav-icon-img"><span>Клипы</span></a></li>
+                <li class="nav-item"><a href="#" class="nav-link"><img src="images/icon-games.png" class="nav-icon-img"><span>Игры</span><span class="nav-badge">2</span></a></li>
+                <li class="nav-item"><a href="stickers.html" class="nav-link active"><img src="images/icon-stickers.png" class="nav-icon-img"><span>Стикеры</span></a></li>
+                <li class="nav-item"><a href="#" class="nav-link"><img src="images/icon-market.png" class="nav-icon-img"><span>Маркет</span></a></li>
+                <li class="nav-divider"></li>
+                <li class="nav-item"><a href="#" class="nav-link"><img src="images/icon-services.png" class="nav-icon-img"><span>Сервисы</span></a></li>
+                <li class="nav-item"><a href="#" class="nav-link"><img src="images/icon-votes.png" class="nav-icon-img"><span>Голоса</span></a></li>
+                <li class="nav-divider"></li>
+                <li class="nav-item"><a href="#" class="nav-link"><img src="images/icon-bookmarks.png" class="nav-icon-img"><span>Закладки</span></a></li>
+                <li class="nav-item"><a href="#" class="nav-link"><img src="images/icon-advertising.png" class="nav-icon-img"><span>Реклама</span></a></li>
+                <li class="nav-item"><a href="#" class="nav-link"><img src="images/icon-help.png" class="nav-icon-img"><span>Помощь</span></a></li>
+                <li class="nav-divider"></li>
+                <li class="nav-item"><a href="#" class="nav-link"><img src="images/icon-people-nearby.png" class="nav-icon-img"><span>Люди рядом</span></a></li>
+            </ul>
+        </nav>
+
+        <main class="stickers-main">
+            <!-- Banners -->
+            <div class="stickers-banners">
+                <div class="sticker-banner sticker-banner--vk">
+                    <div class="sticker-banner__vk-logo">
+                        <img src="images/logo.png" alt="VK">
+                    </div>
+                    <div class="sticker-banner__vk-info">
+                        <div class="sticker-banner__vk-name">ВКонтакте <span class="verified">✓</span></div>
+                        <div class="sticker-banner__vk-meta">подписчиков · 30 друзей</div>
+                    </div>
+                </div>
+                <div class="sticker-banner sticker-banner--promo">
+                    <div class="sticker-banner__promo-content">
+                        <h2 class="sticker-banner__promo-title">Три новых стикера</h2>
+                        <p class="sticker-banner__promo-text">В наборе «Вечная классика emoji»</p>
+                        <button class="sticker-banner__promo-btn">Перейти</button>
+                    </div>
+                    <div class="sticker-banner__promo-emojis">
+                        <div class="promo-emoji">😊</div>
+                        <div class="promo-emoji">😗</div>
+                        <div class="promo-emoji">😰</div>
+                    </div>
+                </div>
+                <div class="sticker-banner sticker-banner--pink">
+                    <div class="sticker-banner__pink-icon">
+                        <svg viewBox="0 0 24 24" width="60" height="60" fill="none" stroke="white" stroke-width="1.5">
+                            <rect x="3" y="3" width="18" height="18" rx="2"/>
+                            <line x1="3" y1="9" x2="21" y2="9"/>
+                            <line x1="9" y1="3" x2="9" y2="21"/>
+                        </svg>
+                    </div>
+                    <button class="sticker-banner__pink-btn">К набору</button>
+                </div>
+            </div>
+
+            <!-- Search -->
+            <div class="stickers-search-block">
+                <div class="stickers-search">
+                    <svg class="stickers-search-icon" viewBox="0 0 24 24">
+                        <path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/>
+                    </svg>
+                    <input type="text" placeholder="Поиск" class="stickers-search-input">
+                </div>
+                <button class="stickers-settings-btn">
+                    <svg viewBox="0 0 24 24"><path d="M19.14 12.94c.04-.3.06-.61.06-.94 0-.32-.02-.64-.07-.94l2.03-1.58c.18-.14.23-.41.12-.61l-1.92-3.32c-.12-.22-.37-.29-.59-.22l-2.39.96c-.5-.38-1.03-.7-1.62-.94l-.36-2.54c-.04-.24-.24-.41-.48-.41h-3.84c-.24 0-.43.17-.47.41l-.36 2.54c-.59.24-1.13.57-1.62.94l-2.39-.96c-.22-.08-.47 0-.59.22L5.09 8.87c-.12.21-.08.47.12.61l2.03 1.58c-.05.3-.09.63-.09.94s.02.64.07.94l-2.03 1.58c-.18.14-.23.41-.12.61l1.92 3.32c.12.22.37.29.59.22l2.39-.96c.5.38 1.03.7 1.62.94l.36 2.54c.05.24.24.41.48.41h3.84c.24 0 .44-.17.47-.41l.36-2.54c.59-.24 1.13-.56 1.62-.94l2.39.96c.22.08.47 0 .59-.22l1.92-3.32c.12-.22.07-.47-.12-.61l-2.01-1.58zM12 15.6c-1.98 0-3.6-1.62-3.6-3.6s1.62-3.6 3.6-3.6 3.6 1.62 3.6 3.6-1.62 3.6-3.6 3.6z"/></svg>
+                </button>
+            </div>
+
+            <!-- Tabs -->
+            <div class="stickers-tabs">
+                <button class="stickers-tab">Мои</button>
+                <button class="stickers-tab active">Для вас</button>
+                <button class="stickers-tab">Анимированные</button>
+                <button class="stickers-tab">Стили</button>
+                <button class="stickers-tab">Влюблённым</button>
+                <button class="stickers-tab">Бесплатные</button>
+                <button class="stickers-tab">Все</button>
+            </div>
+
+            <!-- New Stickers -->
+            <div class="stickers-section">
+                <div class="stickers-section__header">
+                    <h3 class="stickers-section__title">Новые</h3>
+                    <a href="#" class="stickers-section__link">Показать все</a>
+                </div>
+                <div class="stickers-grid">
+                    <div class="sticker-card">
+                        <div class="sticker-card__cover" style="background: linear-gradient(135deg, #7c3aed, #a855f7);">
+                            <span style="font-size: 70px; font-weight: 900; color: #f97316; text-shadow: 2px 2px 4px rgba(0,0,0,0.5);">?</span>
+                        </div>
+                        <div class="sticker-card__votes">3 голоса</div>
+                    </div>
+                    <div class="sticker-card">
+                        <div class="sticker-card__cover" style="background: #e5e7eb;">
+                            <span class="sticker-card__badge sticker-card__badge--red">90%</span>
+                        </div>
+                        <div class="sticker-card__votes">🗳 1 голос</div>
+                    </div>
+                    <div class="sticker-card">
+                        <div class="sticker-card__cover" style="background: linear-gradient(135deg, #fde68a, #fbbf24);">
+                            <span class="sticker-card__badge sticker-card__badge--blue">New</span>
+                        </div>
+                        <div class="sticker-card__votes">🗳 1 голос</div>
+                    </div>
+                    <div class="sticker-card">
+                        <div class="sticker-card__cover" style="background: linear-gradient(135deg, #fce7f3, #f9a8d4);">
+                            <span class="sticker-card__badge sticker-card__badge--blue">New</span>
+                        </div>
+                        <div class="sticker-card__votes">1 голос</div>
+                    </div>
+                    <div class="sticker-card">
+                        <div class="sticker-card__cover" style="background: linear-gradient(135deg, #bae6fd, #7dd3fc);">
+                            <span class="sticker-card__badge sticker-card__badge--blue">New</span>
+                        </div>
+                        <div class="sticker-card__votes">🗳 1 голос</div>
+                    </div>
+                    <div class="sticker-card">
+                        <div class="sticker-card__cover" style="background: linear-gradient(135deg, #fca5a5, #f87171);">
+                            <span class="sticker-card__badge sticker-card__badge--blue">New</span>
+                            <span style="font-size: 50px;">👩‍🦰</span>
+                        </div>
+                        <div class="sticker-card__votes">10 голосов</div>
+                    </div>
+                    <div class="sticker-card">
+                        <div class="sticker-card__cover" style="background: linear-gradient(135deg, #1e293b, #334155);">
+                            <span class="sticker-card__badge sticker-card__badge--blue">New</span>
+                            <span style="font-size: 40px; position: absolute; bottom: 8px; right: 8px;">🧑</span>
+                        </div>
+                        <div class="sticker-card__votes">🗳</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Popular Stickers -->
+            <div class="stickers-section">
+                <div class="stickers-section__header">
+                    <h3 class="stickers-section__title">Популярные</h3>
+                    <a href="#" class="stickers-section__link">Показать все</a>
+                </div>
+                <div class="stickers-grid stickers-grid--popular">
+                    <div class="sticker-card">
+                        <div class="sticker-card__cover" style="background: linear-gradient(135deg, #e2e8f0, #cbd5e1);">
+                            <span class="sticker-card__badge sticker-card__badge--red">95%</span>
+                            <span style="font-size: 60px;">🐭</span>
+                            <span class="sticker-card__play-btn">▶</span>
+                        </div>
+                        <div class="sticker-card__votes"> 1 голос</div>
+                    </div>
+                    <div class="sticker-card">
+                        <div class="sticker-card__cover" style="background: linear-gradient(135deg, #475569, #334155);">
+                            <span class="sticker-card__badge sticker-card__badge--red">90%</span>
+                            <span style="font-size: 60px;">👩‍</span>
+                        </div>
+                        <div class="sticker-card__votes">🗳 1 голос</div>
+                    </div>
+                    <div class="sticker-card">
+                        <div class="sticker-card__cover" style="background: linear-gradient(135deg, #1e293b, #0f172a);">
+                            <div style="font-size: 14px; font-weight: 700; color: #ec4899; text-align: center; line-height: 1.3;">Я ЛЮБЛЮ<br>ТЕБЯ 365<br>ДНЕЙ В<br>ГОДУ</div>
+                        </div>
+                        <div class="sticker-card__votes">100 голосов</div>
+                    </div>
+                    <div class="sticker-card">
+                        <div class="sticker-card__cover" style="background: linear-gradient(135deg, #fef3c7, #fde68a);">
+                            <span class="sticker-card__badge sticker-card__badge--red">90%</span>
+                            <span style="font-size: 60px;">🐭</span>
+                        </div>
+                        <div class="sticker-card__votes"> 1 голос</div>
+                    </div>
+                    <div class="sticker-card sticker-card--large">
+                        <div class="sticker-card__cover" style="background: linear-gradient(135deg, #dc2626, #991b1b);">
+                            <span class="sticker-card__badge sticker-card__badge--red">90%</span>
+                            <div style="display: flex; gap: 8px; align-items: center;">
+                                <span style="font-size: 60px;">🧑</span>
+                                <span style="font-size: 50px;">🎤</span>
+                            </div>
+                        </div>
+                        <div class="sticker-card__votes">🗳 1 голос</div>
+                    </div>
+                    <div class="sticker-card">
+                        <div class="sticker-card__cover" style="background: linear-gradient(135deg, #e2e8f0, #cbd5e1);">
+                            <span class="sticker-card__badge sticker-card__badge--red">90%</span>
+                            <span style="font-size: 60px;">👻</span>
+                        </div>
+                        <div class="sticker-card__votes">🗳 1 голос</div>
+                    </div>
+                    <div class="sticker-card">
+                        <div class="sticker-card__cover" style="background: linear-gradient(135deg, #f97316, #ea580c);">
+                            <span class="sticker-card__badge sticker-card__badge--red">90%</span>
+                        </div>
+                        <div class="sticker-card__votes">🗳</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Discounts -->
+            <div class="stickers-section">
+                <div class="stickers-section__header">
+                    <h3 class="stickers-section__title">Скидки</h3>
+                    <a href="#" class="stickers-section__link">Показать все</a>
+                </div>
+            </div>
+        </main>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Сообщества — ВКонтакте</title>
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header class="header">
+        <div class="header__container">
+            <a href="index.html" class="header__logo">
+                <img src="images/logo.png" alt="VK" class="header__logo-icon">
+                <span class="header__logo-text">ВКонтакте</span>
+            </a>
+            
+            <div class="header__search">
+                <svg class="header__search-icon" viewBox="0 0 24 24">
+                    <path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/>
+                </svg>
+                <input type="text" placeholder="Поиск">
+            </div>
+            
+            <div class="header__icons">
+                <button class="header__icon">
+                    <svg viewBox="0 0 24 24"><path d="M12 22c1.1 0 2-.9 2-2h-4c0 1.1.9 2 2 2zm6-6v-5c0-3.07-1.63-5.64-4.5-6.32V4c0-.83-.67-1.5-1.5-1.5s-1.5.67-1.5 1.5v.68C7.64 5.36 6 7.92 6 11v5l-2 2v1h16v-1l-2-2z"/></svg>
+                </button>
+                <button class="header__icon">
+                    <svg viewBox="0 0 24 24"><path d="M12 3v10.55c-.59-.34-1.27-.55-2-.55-2.21 0-4 1.79-4 4s1.79 4 4 4 4-1.79 4-4V7h4V3h-6z"/></svg>
+                </button>
+                <div class="header__avatar">
+                    <img src="images/profile-avatar.jpg" alt="Профиль">
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="layout">
+        <nav class="left-sidebar">
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="profile.html" class="nav-link">
+                        <img src="images/icon-profile.png" alt="" class="nav-icon-img">
+                        <span>Профиль</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">
+                        <img src="images/icon-feed.png" alt="" class="nav-icon-img">
+                        <span>Лента</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="messages.html" class="nav-link">
+                        <img src="images/icon-messenger.png" alt="" class="nav-icon-img">
+                        <span>Мессенджер</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="calls.html" class="nav-link">
+                        <img src="images/icon-calls.png" alt="" class="nav-icon-img">
+                        <span>Звонки</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="friends.html" class="nav-link">
+                        <img src="images/icon-friends.png" alt="" class="nav-icon-img">
+                        <span>Друзья</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="communities.html" class="nav-link active">
+                        <img src="images/icon-communities.png" alt="" class="nav-icon-img">
+                        <span>Сообщества</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="photos.html" class="nav-link">
+                        <img src="images/icon-photos.png" alt="" class="nav-icon-img">
+                        <span>Фото</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="music.html" class="nav-link">
+                        <img src="images/icon-music.png" alt="" class="nav-icon-img">
+                        <span>Музыка</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">
+                        <img src="images/icon-video.png" alt="" class="nav-icon-img">
+                        <span>Видео</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">
+                        <img src="images/icon-clips.png" alt="" class="nav-icon-img">
+                        <span>Клипы</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">
+                        <img src="images/icon-games.png" alt="" class="nav-icon-img">
+                        <span>Игры</span>
+                        <span class="nav-badge">2</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="stickers.html" class="nav-link">
+                        <img src="images/icon-stickers.png" alt="" class="nav-icon-img">
+                        <span>Стикеры</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">
+                        <img src="images/icon-market.png" alt="" class="nav-icon-img">
+                        <span>Маркет</span>
+                    </a>
+                </li>
+                <li class="nav-divider"></li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">
+                        <img src="images/icon-services.png" alt="" class="nav-icon-img">
+                        <span>Сервисы</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">
+                        <img src="images/icon-votes.png" alt="" class="nav-icon-img">
+                        <span>Голоса</span>
+                    </a>
+                </li>
+                <li class="nav-divider"></li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">
+                        <img src="images/icon-bookmarks.png" alt="" class="nav-icon-img">
+                        <span>Закладки</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">
+                        <img src="images/icon-advertising.png" alt="" class="nav-icon-img">
+                        <span>Реклама</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">
+                        <img src="images/icon-help.png" alt="" class="nav-icon-img">
+                        <span>Помощь</span>
+                    </a>
+                </li>
+                <li class="nav-divider"></li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">
+                        <img src="images/icon-people-nearby.png" alt="" class="nav-icon-img">
+                        <span>Люди рядом</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+
+        <main class="communities-main">
+            <div class="communities-search">
+                <svg class="communities-search-icon" viewBox="0 0 24 24">
+                    <path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/>
+                </svg>
+                <input type="text" placeholder="Поиск сообществ" class="communities-search-input">
+            </div>
+
+            <!-- Recently Visited -->
+            <div class="communities-block">
+                <div class="communities-block__header">
+                    <span class="communities-block__title">Недавно посещали</span>
+                    <button class="communities-block__close">
+                        <svg viewBox="0 0 24 24"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+                    </button>
+                </div>
+                <div class="recent-communities">
+                    <div class="recent-community">
+                        <div class="recent-community__avatar">
+                            <img src="images/community1.jpg" alt="">
+                        </div>
+                        <span class="recent-community__name">BearRichi&...</span>
+                    </div>
+                    <div class="recent-community">
+                        <div class="recent-community__avatar">
+                            <img src="images/community2.jpg" alt="">
+                        </div>
+                        <span class="recent-community__name">Тверской к...</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- All Communities -->
+            <div class="communities-block">
+                <div class="communities-tabs">
+                    <button class="communities-tab active">Все сообщества <span class="communities-tab-count">64</span></button>
+                    <button class="communities-tab">Управляемые <span class="communities-tab-count">1</span></button>
+                </div>
+                <div class="communities-grid">
+                    <div class="community-grid-item">
+                        <div class="community-grid-item__avatar">
+                            <img src="images/community3.jpg" alt="">
+                        </div>
+                        <div class="community-grid-item__info">
+                            <div class="community-grid-item__name">ГК КСК для студентов и ...</div>
+                            <div class="community-grid-item__type">Поиск работы</div>
+                        </div>
+                    </div>
+                    <div class="community-grid-item">
+                        <div class="community-grid-item__avatar">
+                            <img src="images/community4.jpg" alt="">
+                            <span class="community-grid-item__badge">10</span>
+                        </div>
+                        <div class="community-grid-item__info">
+                            <div class="community-grid-item__name">Тверской колледж и...</div>
+                            <div class="community-grid-item__type">
+                                <svg viewBox="0 0 24 24" class="community-type-icon"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2z"/></svg>
+                                Колледж
+                            </div>
+                        </div>
+                    </div>
+                    <div class="community-grid-item">
+                        <div class="community-grid-item__avatar">
+                            <img src="images/community5.jpg" alt="">
+                        </div>
+                        <div class="community-grid-item__info">
+                            <div class="community-grid-item__name">Минмолодёжи Тверско...</div>
+                            <div class="community-grid-item__type">
+                                <svg viewBox="0 0 24 24" class="community-type-icon"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2z"/></svg>
+                                Государственная орган...
+                            </div>
+                        </div>
+                    </div>
+                    <div class="community-grid-item">
+                        <div class="community-grid-item__avatar">
+                            <img src="images/community6.jpg" alt="">
+                        </div>
+                        <div class="community-grid-item__info">
+                            <div class="community-grid-item__name">RachelR</div>
+                            <div class="community-grid-item__type">Блогер</div>
+                        </div>
+                    </div>
+                    <div class="community-grid-item">
+                        <div class="community-grid-item__avatar">
+                            <img src="images/community7.jpg" alt="">
+                        </div>
+                        <div class="community-grid-item__info">
+                            <div class="community-grid-item__name">УБИВАЮ ВРМ</div>
+                            <div class="community-grid-item__type">Rap, Hip-Hop</div>
+                        </div>
+                    </div>
+                    <div class="community-grid-item">
+                        <div class="community-grid-item__avatar">
+                            <img src="images/community8.jpg" alt="">
+                        </div>
+                        <div class="community-grid-item__info">
+                            <div class="community-grid-item__name">Подслушано в Кашине</div>
+                            <div class="community-grid-item__type">Городское сообщество</div>
+                        </div>
+                    </div>
+                    <div class="community-grid-item">
+                        <div class="community-grid-item__avatar">
+                            <img src="images/community9.jpg" alt="">
+                        </div>
+                        <div class="community-grid-item__info">
+                            <div class="community-grid-item__name">ВКонтакте <span class="verified">✓</span></div>
+                            <div class="community-grid-item__type">ВКонтакте</div>
+                        </div>
+                    </div>
+                    <div class="community-grid-item">
+                        <div class="community-grid-item__avatar">
+                            <img src="images/community10.jpg" alt="">
+                        </div>
+                        <div class="community-grid-item__info">
+                            <div class="community-grid-item__name">FRIENDLY THUG 52 NGG</div>
+                            <div class="community-grid-item__type">Rap, Hip-Hop</div>
+                        </div>
+                    </div>
+                </div>
+                <button class="btn-show-all">Показать все <svg viewBox="0 0 24 24"><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"/></svg></button>
+            </div>
+
+            <!-- For You -->
+            <div class="communities-block">
+                <div class="communities-block__header">
+                    <span class="communities-block__title">Для вас</span>
+                    <a href="#" class="communities-block__link">Показать все</a>
+                </div>
+                <div class="for-you-grid">
+                    <div class="for-you-card">
+                        <div class="for-you-card__cover">
+                            <img src="images/foryou1.jpg" alt="">
+                            <span class="for-you-card__subscribers">16,7К подписчиков</span>
+                        </div>
+                        <div class="for-you-card__info">
+                            <div class="for-you-card__name">Тверская область ...</div>
+                            <div class="for-you-card__type">Городское сообщест...</div>
+                        </div>
+                        <button class="for-you-card__btn">Подписаться</button>
+                    </div>
+                    <div class="for-you-card">
+                        <div class="for-you-card__cover">
+                            <img src="images/foryou2.jpg" alt="">
+                            <span class="for-you-card__friends">4 друга</span>
+                        </div>
+                        <div class="for-you-card__info">
+                            <div class="for-you-card__name">Тверь ВКонтакте</div>
+                            <div class="for-you-card__type">Городское сообщест...</div>
+                        </div>
+                        <button class="for-you-card__btn">Подписаться</button>
+                    </div>
+                    <div class="for-you-card">
+                        <div class="for-you-card__cover">
+                            <img src="images/foryou3.jpg" alt="">
+                            <span class="for-you-card__friends">1 друг</span>
+                        </div>
+                        <div class="for-you-card__info">
+                            <div class="for-you-card__name">Школа №14, город ...</div>
+                            <div class="for-you-card__type">Школа</div>
+                        </div>
+                        <button class="for-you-card__btn">Подписаться</button>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <aside class="communities-sidebar">
+            <button class="btn-create-community">Создать сообщество</button>
+
+            <div class="communities-nav">
+                <div class="communities-nav__item active">Главная</div>
+                <div class="communities-nav__item">
+                    Мероприятия
+                    <svg viewBox="0 0 24 24"><path d="M19 3h-1V1h-2v2H8V1H6v2H5c-1.11 0-1.99.9-1.99 2L3 19c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16H5V8h14v11zM9 10H7v2h2v-2zm4 0h-2v2h2v-2zm4 0h-2v2h2v-2z"/></svg>
+                </div>
+            </div>
+
+            <div class="communities-widget">
+                <div class="communities-widget__title">Популярное</div>
+                <div class="popular-communities-list">
+                    <div class="popular-community-item">
+                        <div class="popular-community-avatar">
+                            <img src="images/popular1.jpg" alt="">
+                        </div>
+                        <div class="popular-community-info">
+                            <div class="popular-community-name">Да, Но | Yes, But <span class="verified">✓</span></div>
+                            <div class="popular-community-subs">203,5К подписчиков</div>
+                        </div>
+                        <button class="popular-community-add">
+                            <svg viewBox="0 0 24 24"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/></svg>
+                        </button>
+                    </div>
+                    <div class="popular-community-item">
+                        <div class="popular-community-avatar">
+                            <img src="images/popular2.jpg" alt="">
+                        </div>
+                        <div class="popular-community-info">
+                            <div class="popular-community-name">Новое движение | Фестивал...</div>
+                            <div class="popular-community-subs">6,6К подписчиков</div>
+                        </div>
+                        <button class="popular-community-add">
+                            <svg viewBox="0 0 24 24"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/></svg>
+                        </button>
+                    </div>
+                    <div class="popular-community-item">
+                        <div class="popular-community-avatar">
+                            <img src="images/popular3.jpg" alt="">
+                        </div>
+                        <div class="popular-community-info">
+                            <div class="popular-community-name">ZeeMan <span class="verified">✓</span></div>
+                            <div class="popular-community-subs">241,8К подписчиков</div>
+                        </div>
+                        <button class="popular-community-add">
+                            <svg viewBox="0 0 24 24"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/></svg>
+                        </button>
+                    </div>
+                    <div class="popular-community-item">
+                        <div class="popular-community-avatar">
+                            <img src="images/popular4.jpg" alt="">
+                        </div>
+                        <div class="popular-community-info">
+                            <div class="popular-community-name">Мультпланета</div>
+                            <div class="popular-community-subs">65,2К подписчиков</div>
+                        </div>
+                        <button class="popular-community-add">
+                            <svg viewBox="0 0 24 24"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/></svg>
+                        </button>
+                    </div>
+                    <div class="popular-community-item">
+                        <div class="popular-community-avatar">
+                            <img src="images/popular5.jpg" alt="">
+                        </div>
+                        <div class="popular-community-info">
+                            <div class="popular-community-name">Баста <span class="verified">✓</span></div>
+                            <div class="popular-community-subs">709,1К подписчиков</div>
+                        </div>
+                        <button class="popular-community-add">
+                            <svg viewBox="0 0 24 24"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/></svg>
+                        </button>
+                    </div>
+                    <div class="popular-community-item">
+                        <div class="popular-community-avatar">
+                            <img src="images/popular6.jpg" alt="">
+                        </div>
+                        <div class="popular-community-info">
+                            <div class="popular-community-name">Седа Каспарова - Голос Мож...</div>
+                            <div class="popular-community-subs">222К подписчиков</div>
+                        </div>
+                        <button class="popular-community-add">
+                            <svg viewBox="0 0 24 24"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/></svg>
+                        </button>
+                    </div>
+                </div>
+                <button class="btn-show-all">Показать все</button>
+            </div>
+        </aside>
+    </div>
+
+</body>
+</html>

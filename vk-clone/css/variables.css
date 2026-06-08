@@ -1,0 +1,22 @@
+:root {
+    --bg-page: #19191a;
+    --bg-header: #232324;
+    --bg-card: #232324;
+    --bg-hover: #2a2a2b;
+    --bg-input: #333334;
+    
+    --text-primary: #e1e3e6;
+    --text-secondary: #939393;
+    --text-muted: #767676;
+    --text-white: #ffffff;
+    
+    --accent: #0077ff;
+    --accent-light: #5ba4ff;
+    
+    --border: #333334;
+    
+    --radius-sm: 8px;
+    --radius-md: 12px;
+    
+    --header-height: 48px;
+}
